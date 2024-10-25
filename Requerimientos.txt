@@ -1,0 +1,27 @@
+Prueba Bimestral Desarrollo de Aplicaciones Móviles
+
+ 
+
+Desarrollar una aplicación móvil utilizando ionic que cumpla los siguientes requerimentos:
+
+Debe tener 4 pestañas y puede escoger dentro de las siguientes opciones:
+
+·       Una pestaña debe tener una descripción biográfica del autor, esta pestaña debe tener 15 componentes diferentes.
+
+·       Una pestaña debe tener su foto y un link que me lleve al repositorio de github de la propia aplicación.
+
+·       Una pestaña debe permitir al usuario ingresar dos fechas a través de datepickers y calcular los días que hay entre ellas.
+
+·       Una pestaña permitirá calcular las raices de una ecuación cuadrática.
+
+·       Una pestaña permitira introducir texto y guardarlo localmente en un archivo.
+
+Se deberá hacer el deploy (apk) y probarlo en su dispositivo móvil o un emulador.
+
+Entregables:
+
+En el aula virtual debe subir:
+
+·       Repositorio de github con readme detallado, indicando una captura de cada pestaña.
+
+·       Archivo apk en el repositorio de github.

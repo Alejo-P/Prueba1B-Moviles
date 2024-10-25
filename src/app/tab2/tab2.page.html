@@ -13,5 +13,47 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-card class="p-3 bg-blue-900 border-2 border-blue-500 rounded-lg shadow-2xl shadow-blue-500/50">
+    <div class="flex flex-row justify-center gap-4">
+      <ion-card-header class="text-center">
+        <ion-card-title class="pb-3 text-white">Foto de perfil</ion-card-title>
+      </ion-card-header>
+    </div>
+    <ion-card-content class="text-center text-white">
+      <div class="flex flex-col justify-center items-center col-span-1">
+        <img
+          src="assets/Profiles/Alejo.jpg"
+          alt="Alejo Pinzón"
+          class="rounded-lg border-2 border-slate-700"
+          height="150"
+          width="150"
+        >
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card
+    class="p-3 bg-green-900 border-2 border-green-500 rounded-lg shadow-2xl shadow-green-500/50"
+  >
+    <ion-card-header class="flex flex-row justify-center">
+      <ion-icon name="link" class="text-2xl p-2"></ion-icon>
+      <ion-card-title class="p-2 m-0 text-white">Enlace al repositorio de la aplicación</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content class="text-whitew">
+      <ion-list
+        class="text-white border-2 border-gray-800 rounded-lg"
+      >
+        <ion-item>
+          <ion-label>Repositorio:</ion-label>
+          <ion-label>
+            <a href="https://github.com/Alejo-P/Prueba1B-Moviles.git" class="text-blue-500 font-bold" target="_blank">
+              Prueba1B-Moviles
+            </a>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+
+  </ion-card>
 </ion-content>

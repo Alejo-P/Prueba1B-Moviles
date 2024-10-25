@@ -13,5 +13,45 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <ion-item class="flex flex-row p-3 m-3">
+    <ion-input 
+      label="Valor de A"
+      label-placement="floating"
+      fill="outline"
+      placeholder="numero"
+      class="w-1/6"
+      [(ngModel)]="a"
+    ></ion-input>
+
+    <ion-label class="p-3">x^2</ion-label>
+    <ion-input 
+      label="Valor de B"
+      label-placement="floating"
+      fill="outline"
+      placeholder="numero"
+      class="w-1/6"
+      [(ngModel)]="b"
+    ></ion-input>
+    <ion-label class="p-3">x</ion-label>
+
+    <ion-input 
+      label="Valor de C"
+      label-placement="floating"
+      fill="outline"
+      placeholder="numero"
+      class="w-1/6"
+      [(ngModel)]="c"
+    ></ion-input>
+    <ion-label class="p-3">= 0</ion-label>
+
+    <ion-button 
+      class="w-1/6 h-10 m-3 rounded-lg"
+      (click)="calcularRaices()"
+    >Calcular</ion-button>
+  </ion-item>
+
+  <ion-item class="flex flex-row p-3 m-3">
+    <ion-label class="p-3">Raices: </ion-label>
+    <ion-label class="p-3">{{raices}}</ion-label>
+  </ion-item>
 </ion-content>

@@ -17,7 +17,7 @@ export class DeviceStorage{
                 encoding: Encoding.UTF8
             });
             console.log("Archivo guardado", resultado);
-            return {isSaved:true, message:"Archivo guardado"};      
+            return {isSaved:true, message:`Archivo guardado en ${resultado.uri}`};      
         } catch (error) {
             console.log("Error al guardar el archivo", error);
             return {isSaved:false, message:"Error al guardar el archivo"};

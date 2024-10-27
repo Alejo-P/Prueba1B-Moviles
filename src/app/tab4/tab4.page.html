@@ -6,16 +6,42 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" class="flex flex-row justify-center">
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Tab 3</ion-title>
     </ion-toolbar>
   </ion-header>
+  
+  <div class="flex flex-col">
+    <ion-label>Nombre del archivo</ion-label>
+    <ion-input [(ngModel)]="nombre" placeholder="Nombre del archivo sin la extension .txt"></ion-input>
+  </div>
 
   <ion-textarea
-    label="Outline textarea"
+    label="Contenido del archivo"
     placeholder="Ingresa tu texto aqui ..."
+    [(ngModel)]="texto"
   ></ion-textarea>
+
+  <ion-button
+    id="open-toast"
+    *ngIf="texto && nombre"
+    expand="block"
+    class="bg-green-600 text-gray-700 rounded-lg h-10 m-3"
+    (click)="guardarTexto()"
+  >Guardar</ion-button>
+
+  <ion-button
+    *ngIf="!texto || !nombre"
+    expand="block"
+    class="bg-red-600 text-gray-700 rounded-lg h-10 m-3"
+    (click)="guardarTexto()"
+    disabled
+  >Guardar</ion-button>
+
+  <ion-toast trigger="open-toast" [message]="resultado.message" [duration]="5000"></ion-toast>
+
+
 </ion-content>
 

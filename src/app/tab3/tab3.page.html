@@ -12,43 +12,57 @@
       <ion-title size="large">Tab 3</ion-title>
     </ion-toolbar>
   </ion-header>
+  
+  <ion-item>
+    <ion-label class="p-3">Ecuacion cuadratica: </ion-label>
+  </ion-item>
 
-  <ion-item class="flex flex-row p-3 m-3">
-    <ion-input 
-      label="Valor de A"
-      label-placement="floating"
-      fill="outline"
-      placeholder="numero"
-      class="w-1/6"
-      [(ngModel)]="a"
-    ></ion-input>
+  <div class="flex flex-col md:flex-row md:justify-center p-3 m-3">
+    <ion-item class="flex flex-row">
+      <ion-input 
+        label="Valor de A"
+        label-placement="floating"
+        type="number"
+        fill="outline"
+        placeholder="numero"
+        class="w-4/6"
+        [(ngModel)]="a"
+      ></ion-input>
+      <ion-label class="p-3">x^2</ion-label>
+    </ion-item>
 
-    <ion-label class="p-3">x^2</ion-label>
-    <ion-input 
-      label="Valor de B"
-      label-placement="floating"
-      fill="outline"
-      placeholder="numero"
-      class="w-1/6"
-      [(ngModel)]="b"
-    ></ion-input>
-    <ion-label class="p-3">x</ion-label>
+    <ion-item class="flex flex-row">
+      <ion-input 
+        label="Valor de B"
+        label-placement="floating"
+        type="number"
+        fill="outline"
+        placeholder="numero"
+        class="w-4/6"
+        [(ngModel)]="b"
+      ></ion-input>
+      <ion-label class="p-3">x</ion-label>
+    </ion-item>
 
-    <ion-input 
-      label="Valor de C"
-      label-placement="floating"
-      fill="outline"
-      placeholder="numero"
-      class="w-1/6"
-      [(ngModel)]="c"
-    ></ion-input>
-    <ion-label class="p-3">= 0</ion-label>
+    <ion-item class="flex flex-row">
+      <ion-input 
+        label="Valor de C"
+        label-placement="floating"
+        type="number"
+        fill="outline"
+        placeholder="numero"
+        class="w-4/6"
+        [(ngModel)]="c"
+      ></ion-input>
+      <ion-label class="p-3">=0</ion-label>
+    </ion-item>
 
     <ion-button 
-      class="w-1/6 h-10 m-3 rounded-lg"
+      class="h-10 m-3 rounded-lg bg-green-600 text-black"
+      expand="block"
       (click)="calcularRaices()"
     >Calcular</ion-button>
-  </ion-item>
+  </div>
 
   <ion-item class="flex flex-row p-3 m-3">
     <ion-label class="p-3">Raices: </ion-label>

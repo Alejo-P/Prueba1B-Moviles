@@ -5,13 +5,15 @@ const config: CapacitorConfig = {
   appName: 'pruebaB1Moviles',
   webDir: 'www',
   plugins: {
+    App:{
+      androidIcon: "icon"
+    },
     SplashScreen: {
       launchShowDuration: 0, // Duración de la animación de entrada (Usada en otro lado de la aplicacion)
       launchAutoHide: true,
       launchFadeOutDuration: 3000,
-      // Fondo gris claro
-      backgroundColor: "#f2f2f2", 
-      androidSplashResourceName: "splash",
+      backgroundColor: "#f2f2f2", // Color de fondo del splash screen
+      androidSplashResourceName: "splash", // Nombre del archivo de imagen en la carpeta resources de android
       androidScaleType: "CENTER_CROP",
       showSpinner: false,
       androidSpinnerStyle: "large",
@@ -21,7 +23,7 @@ const config: CapacitorConfig = {
       splashImmersive: true,
       layoutName: "launch_screen",
       useDialog: false,
-    },
+    }
   },
   cordova: {
     preferences: {

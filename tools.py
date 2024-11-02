@@ -14,7 +14,7 @@ ruta_destino = os.path.join(os.getcwd(), "android", "app", "src", "main", "res")
 
 try:
     # Recorrer el directorio de imagenes o iconos
-    for imagen in os.listdir(ruta_iconos):
+    for imagen in os.listdir(ruta_imagenes):
         # Obtener la ruta de la imagen
         resto_ruta = "-".join(imagen.split("-")[:-1]) # drawable-land-hdpi
         nombre_imagen = "splash.png" if "screen" in imagen else "icon.png"
@@ -30,7 +30,7 @@ try:
             os.remove(os.path.join(ruta_destino, resto_ruta, nombre_imagen))
             
         # Copiar la imagen
-        path_Archivo = shutil.copy2(os.path.join(ruta_iconos, imagen), os.path.join(ruta_destino, resto_ruta, nombre_imagen))
+        path_Archivo = shutil.copy2(os.path.join(ruta_imagenes, imagen), os.path.join(ruta_destino, resto_ruta, nombre_imagen))
         
         print(f"Imagen {imagen} copiada a {path_Archivo}")
 except Exception as e:

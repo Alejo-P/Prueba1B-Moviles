@@ -1,3 +1,4 @@
+Rama [AppMejorada](https://github.com/Alejo-P/Prueba1B-Moviles/tree/AppMejorada)
 ## Aplicacion Movil (Prueba IB - AppsMoviles)
 
 La aplicacion consiste en 4 tabs cada uno con una funcionalidad distinta
@@ -38,6 +39,3 @@ Cambio del icono por una imagen personalizada
 ![Screenshot_20241102-181813](https://github.com/user-attachments/assets/9c8499bb-6b86-4754-b909-5576a7a9dbd5)
 
 Implementacion de una imagen como Splash Screen que se carga y muestra al ejecutarse la aplicacion
-
-
-

@@ -1,4 +1,6 @@
-Rama [AppMejorada](https://github.com/Alejo-P/Prueba1B-Moviles/tree/AppMejorada)
+> [!Note]
+> Nuevas implementaciones ```Splash Screen e icono personalizado``` en [AppMejorada](https://github.com/Alejo-P/Prueba1B-Moviles/tree/AppMejorada)
+
 ## Aplicacion Movil (Prueba IB - AppsMoviles)
 
 La aplicacion consiste en 4 tabs cada uno con una funcionalidad distinta
